@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+
+  <title>Divisão de Horas</title>
+</head>
+<body>
+
+  <div class="container">
+  <h1>Calculo horas Jaque</h1>
+  <label for="horas">Qnts Horas vc deve:</label>
+  <input type="number" id="horas"><br><br>
+  
+  <label for="inicio">Início:</label>
+  <input type="date" id="inicio"><br><br>
+  
+  <label for="fim">Fim:</label>
+  <input type="date" id="fim"><br><br>
+  
+  <label for="dias">Dias úteis <strong>(Em quais dias vc quer pagar essas horas?):</label>
+  <select id="dias" multiple>
+    <option value="1">Segunda-feira</option>
+    <option value="2">Terça-feira</option>
+    <option value="3">Quarta-feira</option>
+    <option value="4">Quinta-feira</option>
+    <option value="5">Sexta-feira</option>
+  </select><br><br>
+  
+  <button onclick="calcular()">Calcular</button>
+  
+  <p id="resultado"></p>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
